@@ -6,7 +6,7 @@ public class DetectionCheck : MonoBehaviour
     {
         if (collision.CompareTag("Player") && collision.GetComponent<PlayerMovement>().isHiding == false)
         {
-            Debug.Log("Marco");
+            transform.parent.GetComponent<EnemyScript>().pathFinding.SetDestination(collision.transform.position);
         }
     }
 }

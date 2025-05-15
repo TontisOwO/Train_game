@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
     private bool isGrounded;
+    public bool isHiding;
 
     void Start()
     {

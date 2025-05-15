@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ShowelScript : MonoBehaviour
+public class ShovelScript : MonoBehaviour
 {
     [SerializeField] int ShowelDamage = 10;
     [SerializeField] float ShowelCooldown = 1.0f; // Cooldown duration in seconds

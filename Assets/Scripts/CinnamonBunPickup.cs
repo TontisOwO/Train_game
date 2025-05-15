@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class CinnamonBunPickup : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float pickupRange = 2f;
+    public Transform player;
+    public PlayerInventory playerInventory;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        float distance = Vector3.Distance(transform.position, player.position);
+
+        if (distance < pickupRange && Input.GetKeyDown(KeyCode.E))
+        {
+            playerInventory.hasBun = true;
+            Destroy(gameObject);
+        }
     }
 }

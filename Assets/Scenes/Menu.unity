@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 101069237}
   - component: {fileID: 101069239}
   - component: {fileID: 101069238}
+  - component: {fileID: 101069240}
   m_Layer: 5
   m_Name: SettingsMenu
   m_TagString: Untagged
@@ -376,6 +377,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101069236}
   m_CullTransparentMesh: 1
+--- !u!114 &101069240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101069236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26032dd94c9fe054e86c572bf97ef56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSettings: {fileID: 11400000, guid: 334e84fbe94c13944be548535c5a9783, type: 2}
 --- !u!1 &165537390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,7 +1414,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1469404178}
+        - m_Target: {fileID: 672451666}
           m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
           m_MethodName: Over
           m_Mode: 1
@@ -1416,7 +1430,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1469404178}
+        - m_Target: {fileID: 672451666}
           m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
           m_MethodName: Exit
           m_Mode: 1
@@ -1478,7 +1492,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 101069240}
+        m_TargetAssemblyTypeName: SettingChange, Assembly-CSharp
+        m_MethodName: SettingEdit
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &713972016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +1848,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1469404178}
+        - m_Target: {fileID: 906610259}
           m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
           m_MethodName: Over
           m_Mode: 1
@@ -1838,7 +1864,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1469404178}
+        - m_Target: {fileID: 906610259}
           m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
           m_MethodName: Exit
           m_Mode: 1
@@ -1894,13 +1920,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1255898898}
   m_HandleRect: {fileID: 1978833626}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 50
+  m_MaxValue: 600
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 60
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 101069240}
+        m_TargetAssemblyTypeName: SettingChange, Assembly-CSharp
+        m_MethodName: SettingEdit
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &915765281
 GameObject:
   m_ObjectHideFlags: 0
@@ -2614,7 +2652,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1469404178}
+        - m_Target: {fileID: 1084823509}
           m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
           m_MethodName: Over
           m_Mode: 1
@@ -2630,7 +2668,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1469404178}
+        - m_Target: {fileID: 1084823509}
           m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
           m_MethodName: Exit
           m_Mode: 1
@@ -2692,7 +2730,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 101069240}
+        m_TargetAssemblyTypeName: SettingChange, Assembly-CSharp
+        m_MethodName: SettingEdit
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1086959437
 GameObject:
   m_ObjectHideFlags: 0

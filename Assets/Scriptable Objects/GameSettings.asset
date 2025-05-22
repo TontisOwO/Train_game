@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a44f46ff94dc5ad4d81a9906611fef5f, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  SensitivitySetting: 100
+  SensitivitySetting: 350
   MusicVolume: 0
   SFXVolume: 0

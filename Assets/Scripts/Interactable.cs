@@ -5,7 +5,7 @@ public class Interactable : MonoBehaviour
     public float interactRange = 2f;
     public Transform player;
     public InteractionUI interactionUI;
-    public string interactionMessage = "Press E to interact";
+
     public System.Action onInteract;
 
     private bool hasInteracted = false;
@@ -16,7 +16,7 @@ public class Interactable : MonoBehaviour
 
         if (distance < interactRange && !hasInteracted)
         {
-            interactionUI.Show(interactionMessage);
+            interactionUI.Show();
 
             if (Input.GetKeyDown(KeyCode.E))
             {

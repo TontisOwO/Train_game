@@ -405,7 +405,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6552762639583175670}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7077469527841937652}
+        m_TargetAssemblyTypeName: MenuOpen, Assembly-CSharp
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3887417790550107513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1252,6 +1264,7 @@ GameObject:
   - component: {fileID: 719264734981656314}
   - component: {fileID: 99336728853811233}
   - component: {fileID: 6334505522423070959}
+  - component: {fileID: 7077469527841937652}
   m_Layer: 5
   m_Name: SettingsMenu
   m_TagString: Untagged
@@ -1337,6 +1350,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSettings: {fileID: 11400000, guid: 334e84fbe94c13944be548535c5a9783, type: 2}
+--- !u!114 &7077469527841937652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734773187841856032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe2d02fe8a82cd4797f594756f256c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lerpAmount: 8
+  open: 0
 --- !u!1 &6193646106392887304
 GameObject:
   m_ObjectHideFlags: 0

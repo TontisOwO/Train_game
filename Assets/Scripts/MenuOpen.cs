@@ -4,7 +4,7 @@ public class MenuOpen : MonoBehaviour
 {
     Vector2 startPos;
     Vector2 endPos = new Vector2(960, 540);
-    [SerializeField] float lerpAmount = 10;
+    [SerializeField] float lerpAmount = 8;
     [SerializeField] bool open;
     void Awake()
     {

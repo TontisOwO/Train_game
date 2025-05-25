@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4ca4018cfd95c941bc2bd570562a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Otto's scene
+  SceneName: TrainScene
 --- !u!1 &515636015
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class SettingChange : MonoBehaviour
         sensitivitySlider = GetComponentsInChildren<Slider>()[0];
         musicSlider = GetComponentsInChildren<Slider>()[1];
         SFXSlider = GetComponentsInChildren<Slider>()[2];
-        sensitivitySlider.value = gameSettings.SensitivitySetting;
+        sensitivitySlider.value = gameSettings.mouseSensitivity;
         musicSlider.value = gameSettings.MusicVolume;
         SFXSlider.value = gameSettings.SFXVolume;
     }
@@ -23,7 +23,7 @@ public class SettingChange : MonoBehaviour
         switch (setting)
         {
             case 0:
-                gameSettings.SensitivitySetting = sensitivitySlider.value;
+                gameSettings.mouseSensitivity = sensitivitySlider.value;
                 break;
 
             case 1:

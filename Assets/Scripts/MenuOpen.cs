@@ -6,6 +6,7 @@ public class MenuOpen : MonoBehaviour
     Vector2 endPos = new Vector2(960, 540);
     [SerializeField] float lerpAmount = 8;
     [SerializeField] bool open;
+    [SerializeField] MouseLook mouseLook;
     void Awake()
     {
         startPos = transform.position;
@@ -13,6 +14,16 @@ public class MenuOpen : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Open();
+            if (mouseLook != null)
+            {
+                mouseLook.enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+        }
         if (open)
         {
             transform.position = Vector2.Lerp(endPos, transform.position, Mathf.Pow(0.5f,lerpAmount * Time.deltaTime));
@@ -31,5 +42,11 @@ public class MenuOpen : MonoBehaviour
     public void Close() 
     {
         open = false;
+        if (mouseLook != null)
+        {
+            mouseLook.enabled = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 }

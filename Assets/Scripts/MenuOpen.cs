@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class MenuOpen : MonoBehaviour
 {
-    Vector2 startPos;
-    Vector2 endPos = new Vector2(960, 540);
+    [SerializeField] Vector2 startPos;
+    [SerializeField] Vector2 endPos = new Vector2(960, 540);
     [SerializeField] float lerpAmount = 8;
     [SerializeField] bool open;
     [SerializeField] MouseLook mouseLook;
